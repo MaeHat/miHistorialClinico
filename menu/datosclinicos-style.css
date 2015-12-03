@@ -1,0 +1,17 @@
+table td { /*DATOS, HISTORIAL*/
+    padding: 10px;
+}
+
+table th { /*DATOS, HISTORIAL*/
+    padding: 10px;
+}
+
+table tr:nth-child(odd){ /*DATOS, HISTORIAL*/
+    background-color: #eee;
+}
+
+table { /*DATOS, HISTORIAL*/
+    width: 100%;
+    border-collapse: collapse;   
+}
+

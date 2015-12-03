@@ -1,0 +1,112 @@
+.contenido {
+    background: #fff;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-top: 0px;
+}
+
+/***********************************/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}  
+
+html {
+    font-family: source_sans_proregular;
+}
+
+
+header {
+    width: 100%;
+}
+
+nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    float: none;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 15px; 
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li span {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #00838F;
+}
+
+#menu {
+    width: 70%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    margin-bottom: 0px;
+    background: #006064;
+    left: -100%;
+    z-index: 2;
+}
+
+.icon-menu {
+    text-decoration: none;
+    color: #fff;
+}
+    
+.menu_bar {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background: #006064;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header p {
+    padding: 20px;   
+}
+
+.menu_bar span {
+    float: right;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.icono_circular {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+.usuario li p {
+    color: #fff;
+    padding: 30px; 
+    display: block;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+
+

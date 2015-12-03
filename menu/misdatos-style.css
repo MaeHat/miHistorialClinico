@@ -1,0 +1,25 @@
+.contenido ul {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    z-index: 1;
+    background: #ccc; 
+}
+
+.contenido ul li {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-align: center;
+}
+
+.contenido ul li a {
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+    color: #024959;
+}
+.contenido ul li a:hover {
+    background: #A4A4A4;   
+}
+
+
