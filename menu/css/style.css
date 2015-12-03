@@ -108,5 +108,12 @@ header p {
     font-size: 140%;
 }
 
+/************ Estadísticas ***********************/
+
+#container{
+    min-width: 310px; 
+    height: 400px; 
+    margin: 0 auto
+}
 
 
