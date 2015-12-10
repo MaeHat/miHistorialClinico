@@ -35,13 +35,15 @@
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Fecha inicio</th>
+                    <th>Cantidad/día</th>
+                    <th>Comienzo</th>
                     <th>Finalización</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><input class="form-control" ng-model="medicamento.name"></td>
+                    <td><input class="form-control"></td>
                     <td><input type="date" class="form-control" ng-model="medicamento.start"></td>
                     <td><input type="date" class="form-control" ng-model="medicamento.end"></td>
                     <td><button class="btn btn-primary" ng-click="addContact()"/>+</td>
