@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicamentos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <title>Contact List App</title>
+</head>
+    
+<body>
+    <header>
+        <div class="menu_bar">
+            
+            <div><a onclick="ver_menu()"><span class="icon-menu"></span></a><p>HistoMed</p></div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <div class="usuario"><li><img class="icono_circular" src="imagenes/foto_perfil.jpg"/><p>Pepito</p></li></div>
+                <li><a href="misdatos.html"><span class="icon-profile"></span>Mis datos</a></li>
+                <li><a href="medicamentos.html"><span class="icon-aid-kit"></span>Medicamentos</a></li>
+                <li><a href="calendario.html"><span class="icon-calendar"></span>Calendario</a></li>
+                <li><a href="mapa.html"><span class="icon-location"></span>Farmacias/Centros</a></li>
+                <li><a href="estadistica.html"><span class="icon-stats-dots"></span>Estadísticas</a></li>
+                <li><a href="#"><span class="icon-wrench"></span>Configuración</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <div class="contenido" ng-controller="AppCtrl">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha inicio</th>
+                    <th>Finalización</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-control" ng-model="medicamento.name"></td>
+                    <td><input type="date" class="form-control" ng-model="medicamento.start"></td>
+                    <td><input type="date" class="form-control" ng-model="medicamento.end"></td>
+                    <td><button class="btn btn-primary" ng-click="addContact()"/>+</td>
+
+                </tr>
+                <!--<tr ng-repeat="medicamento in medicamentos">
+                    <td>{{medicamento.name}}</td>
+                    <td>{{medicamento.start}}</td>
+                    <td>{{medicamento.end}}</td>
+                    <td><button class="btn btn-danger" ng-click="remove()">-</button></td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+<script src="js/jquery.1.11.1.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>
