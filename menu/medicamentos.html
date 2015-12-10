@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"  crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts.css">
-
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <title>Contact List App</title>
 </head>
     
@@ -36,16 +37,18 @@
                     <th>Cantidad/día</th>
                     <th>Comienzo</th>
                     <th>Finalización</th>
+                    <th>&nbsp;</th>
                 </tr>
             </thead>
             <tbody ng-controller="AppCtrl">
                 <tr>
                     <form>
-                        <td><input type="text" class="form-control" ng-model="nuevoMedicamento.nombre" required></td>
+                        <td><input name="name" type="text" class="form-control" ng-model="nuevoMedicamento.nombre" required></td>
                         <td><input type="text" class="form-control" ng-model="nuevoMedicamento.cantidad"></td>
                         <td><input type="date" class="form-control" ng-model="nuevoMedicamento.inicio"></td>
                         <td><input type="date" class="form-control" ng-model="nuevoMedicamento.fin"></td>
-                        <td><input type="submit" class="btn btn-primary" ng-click="addMedic()" value="+"></td>
+                        <td><button type="submit" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" ng-click="addMedic()" value="+">
+  <i class="material-icons">add</i></button></td>
                     </form>
                 </tr>
                 <tr ng-repeat="medicamento in medicamentos track by $index">
@@ -53,11 +56,14 @@
                     <td>{{medicamento.cantidad}}</td>
                     <td>{{medicamento.inicio}}</td>
                     <td>{{medicamento.fin}}</td>
-                    <td><button class="btn btn-danger" ng-click="remove($index)">-</button></td>
+                    <td><button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" ng-click="remove($index)"><i class="material-icons">remove</i></button></td>
+                    <td><button class="btn btn-warning" ng-click="edit($index)">Edit</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
+
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="js/controllerMedic.js"></script>
 <script src="js/jquery.1.11.1.min.js"></script>
